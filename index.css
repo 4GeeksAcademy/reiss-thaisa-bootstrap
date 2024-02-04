@@ -1,0 +1,45 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.create-modal-btn-actions {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.post-grid-option .nav-link {
+    color: gray;
+}
+
+.post-grid-option .active {
+    color: red;
+}
+
+.grid-multiple {
+    padding: 0px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.grid-multiple .card {
+    height: 400px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.grid-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.grid-single .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

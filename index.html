@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid mt-0 ms-5">
+      <i class="fa-brands fa-instagram" style="margin-right: 10px;"></i>
+      <a class="navbar-brand" href="#">Instagram</a>
+
+      <button type="button" class="btn btn-success ms-auto" style="margin-right: 10px;" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Create a new post
+      </button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#" style="color: red">Log out</a></li>
+        </ul>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+              <div class="create-modal-btn-actions">
+                <button class="btn btn-light">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button class="btn btn-light">
+                  <i class="fa-solid fa-location-pin"></i>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <ul class="nav justify-content-center nav-pills mb-3 mt-3" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="multiple-tab" data-bs-toggle="tab" data-bs-target="#multiple-tab-pane"
+        type="button" role="tab" aria-controls="multiple-tab-pane" aria-selected="true">
+        <i class="fa-solid fa-border-all"></i>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="single-tab" data-bs-toggle="tab" data-bs-target="#single-tab-pane" type="button"
+        role="tab" aria-controls="single-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="multiple-tab-pane" role="tabpanel" aria-labelledby="multiple-tab"
+      tabindex="0">
+
+      <div class="grid-multiple">
+        <div class="card"
+          style="background-image: url('https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024');">
+        </div>
+        <div class="card"
+          style="background-image: url('https://nortenews.org/wp-content/uploads/2022/09/ISD-1-SV.webp');">
+        </div>
+        <div class="card"
+          style="background-image: url('https://img.redbull.com/images/q_auto,f_auto/redbullcom/2017/09/20/0bba35af-bf8c-4296-8cbd-1e4ccedfcc6a/star-wars-spaceships-millennium-falcon');">
+        </div>
+        <div class="card"
+          style="background-image: url('https://www.cnet.com/a/img/resize/ff32644af8398591a22d88f8c2e569c7c0d88bb4/hub/2020/01/09/f79a9662-35a4-4676-bbf6-b71a223e0a5c/ship-tie-razor-crest.jpg?auto=webp&fit=crop&height=675&width=1200');">
+        </div>
+        <div class="card"
+          style="background-image: url('https://www.cnet.com/a/img/resize/ffef42b3978de8e692423876a110a33ae6e1eaca/hub/2019/10/22/e6ee2566-6bec-4347-8380-a823726e3263/ship-tie-brute.jpg?auto=webp&width=1200');">
+        </div>
+        <div class="card"
+          style="background-image: url('https://cdn.mos.cms.futurecdn.net/Lzjzqs26M7tTjm4xLTzA5C.jpg');">
+        </div>
+        <div class="card"
+          style="background-image: url('https://wegotthiscovered.com/wp-content/uploads/2022/07/Darth-Vader-TIE-Fighter.jpg');">
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade" id="single-tab-pane" role="tabpanel" aria-labelledby="single-tab" tabindex="0">
+
+      <div class="grid-single">
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Spaceship 1</h4>
+            <div>1/7</div>
+          </div>
+          <img src="https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Spaceship 2</h4>
+            <div>2/7</div>
+          </div>
+          <img src="https://nortenews.org/wp-content/uploads/2022/09/ISD-1-SV.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Spaceship 3</h4>
+            <div>3/7</div>
+          </div>
+          <img
+            src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2017/09/20/0bba35af-bf8c-4296-8cbd-1e4ccedfcc6a/star-wars-spaceships-millennium-falcon"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Spaceship 4</h4>
+            <div>4/7</div>
+          </div>
+          <img
+            src="https://www.cnet.com/a/img/resize/ff32644af8398591a22d88f8c2e569c7c0d88bb4/hub/2020/01/09/f79a9662-35a4-4676-bbf6-b71a223e0a5c/ship-tie-razor-crest.jpg?auto=webp&fit=crop&height=675&width=1200"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title 4</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Test 5</h4>
+            <div>Spaceship 5</div>
+          </div>
+          <img
+            src="https://www.cnet.com/a/img/resize/ffef42b3978de8e692423876a110a33ae6e1eaca/hub/2019/10/22/e6ee2566-6bec-4347-8380-a823726e3263/ship-tie-brute.jpg?auto=webp&width=1200"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Spaceship 5</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Spaceship 6</h4>
+            <div>6/7</div>
+          </div>
+          <img src="https://cdn.mos.cms.futurecdn.net/Lzjzqs26M7tTjm4xLTzA5C.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title 6</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="col-4 card h-100">
+          <div class="card-header">
+            <h4>Spaceship 7</h4>
+            <div>7/7</div>
+          </div>
+          <img
+            src="https://wegotthiscovered.com/wp-content/uploads/2022/07/Darth-Vader-TIE-Fighter.jpg"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title 7</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
